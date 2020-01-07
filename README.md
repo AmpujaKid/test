@@ -1,2 +1,0 @@
-# leetgrail
- school assignment
