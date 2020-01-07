@@ -3,4 +3,19 @@ body {
 }
 #text {
 	color:#FFFFFF;
+	font-weight:bold;
 }
+#red {
+	color:#FF0000;
+}
+#orange {
+	color:#FFA500;
+}
+#yellow {
+	color:#A5A500;
+}
+#green {
+	color:#00FF00;
+}
+#purple {
+	color:#FF00FF;
