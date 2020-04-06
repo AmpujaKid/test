@@ -9,17 +9,27 @@ body {
 	color:#000000;
 	font-weight:bold;
 }
+#text3 {
+	color:#00FF00;
+	font-weight:bold;
+}
 #red {
 	color:#FF0000;
+	font-weight:bold;
 }
 #orange {
 	color:#FFA500;
+	font-weight:bold;
 }
 #yellow {
 	color:#A5A500;
+	font-weight:bold;
 }
 #green {
 	color:#00FF00;
+	font-weight:bold;
 }
 #purple {
 	color:#FF00FF;
+	font-weight:bold;
+}
