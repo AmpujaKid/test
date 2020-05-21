@@ -69,8 +69,8 @@ html
 {
 	margin: 0;
 	padding: 0;
-	color: #aaaaaa;
-	background-color: #333333;
+	color: #000000;
+	background-color: #000000;
 	font: normal 12px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
 }
 
@@ -96,15 +96,14 @@ h4 { font-size: 20px; }
 
 h5, h6 { font-size: 17px; }
 
-ul, ol, dl, blockquote, pre
+ul, ol, dl, blockquote, pre, a
 {
-	color: #999999;
+	color: #000000;
 	margin: 10px 35px; 
 	padding: 10px 30px; 
 	line-height: 1.6em;
-	border: 1px solid #1a1a1a;
-	border-top: 10px solid #151515;
-	background: #404040 url(images/navigation_hover.gif) top left repeat;
+	background: #000000;
+	text-align: center;
 }
 
 p { margin: 0; }
