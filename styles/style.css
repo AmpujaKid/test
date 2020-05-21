@@ -247,7 +247,7 @@ body
 #navigation a:active
 {
 	color: #7799bb;
-	background: #333333 url(images/navigation_hover.gif) top left repeat;
+	background: #000000 url(images/navigation_hover.gif) top left repeat;
 }
 
 li#lhome a:hover,
