@@ -12,19 +12,22 @@
 <h4>Shoutbox</h4>
 	<div id="content-wrapper">
 		<script src="https://www.shoutbox.com/chat/chat.js.php"></script>
-		<script> var chat = new Chat(14775);</script>
+		<script>
+		value = localStorage["id"];
+		var chat = new Chat(14775,localStorage["id"]);
+		</script>
 	</div>
 <div id="content">
   <div id="sidebar-wrapper">
     <div id="sidebar">
       <h3>Staff Members</h3>
       <ul>
-        <li>Ampuja Kid</li>
-        <li>Staff 2</li>
-        <li>Staff 3</li>
-        <li>Staff 4</li>
-        <li>Staff 5</li>
-        <li>Staff 6</li>
+        <li id="purple">AmpujaKid</li>
+        <li id="purple">Staff 2</li>
+        <li id="purple">Staff 3</li>
+        <li id="purple">Staff 4</li>
+        <li id="purple">Staff 5</li>
+        <li id="purple">Staff 6</li>
       </ul>
     </div>
   </div>
