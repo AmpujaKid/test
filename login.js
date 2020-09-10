@@ -1,7 +1,7 @@
 function pasuser(form) {
 if (form.id.value=="leetgrail") {
 if (form.pass.value=="cybersecurity") {
-location="Register.html"
+location="Page2.html"
 } else {
 alert("Invalid Password")
 }
