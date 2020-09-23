@@ -81,7 +81,7 @@ setTimeout(() => {
         return push.apply(this, [data, ...rest]);
     }
 
-    var menuHTML = '';
+    var menuHTML = 1;
     menuHTML += <div style="background-color: rgba(0, 0, 0, 0.2); padding: 10px; border-radius: 10px; position: absolute; left: 10%; top: 25%; z-index: 999999; color: #FFFFFF;">;
     menuHTML += NasaPeek (F): <b style="color: #FF0000;" id="nasa">OFF</b>;
     menuHTML += <br>;
