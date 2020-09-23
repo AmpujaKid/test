@@ -5,10 +5,24 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
+<script src="logindev.js"></script>
 <center>
-<p id="purple">Tampermonkey is required for script to work</p>
-<a href="./updatelog.html" id="yellow">Update Log</a>
- <a href="./leetgrail krunker/loader/srcnondev/index.html" id="yellow">Go to loader</a>
+<table cellpadding="4">
+	<tr>
+		<td id="purple">Dev Login</td>
+	</tr>
+	<tr>
+		<td id="purple">UserID:</td>
+		<td><form name="login"><input name="id" type="text"></td>
+	</tr>
+	<tr>
+		<td id="purple">Password:</td>
+		<td><input name="pass" type="password"></td>
+	</tr>
+	<tr>
+		<td id="purple"><input type="button" value="Login"onClick="pasuser(this.form)"></td>
+	</tr>
+</table>
 </center>
 <script language="JavaScript">
 document.onkeypress = function (event) {
