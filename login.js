@@ -1,7 +1,7 @@
 function pasuser(form) {
   if (form.id.value=="leetgrail") {
       if (form.pass.value=="krunker") {
-        location="Home Page.html"
+        location="tools.html"
       }
     }
 
