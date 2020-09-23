@@ -87,8 +87,8 @@ html{
       position: relative;
       float: left;
       justify-content: center;
-      left: 80px;
-      top: 70px;
+      left: 20px;
+      top: -20px;
   }
 
   .info button{
@@ -117,7 +117,7 @@ html{
     position: relative;
     font-size: 13px;
     font-family: Verdana;
-    left: 40%;
+    text-align: center;
     top: 5px;
 }
 
