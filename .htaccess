@@ -1,4 +1,0 @@
-AuthType Basic  
-AuthName "restricted area"  
-AuthUserFile C:\Users\aidan\OneDrive\Documents\GitHub\test\.htpasswd
-require valid-user
