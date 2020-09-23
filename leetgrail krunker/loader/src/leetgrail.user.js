@@ -24,9 +24,9 @@ Object.defineProperty(Object.prototype, "name", {enumerable: false, get(){return
 // Animated Billboards
 Object.defineProperty(Object.prototype, "shaderId", {enumerable: false, get(){if(this.src && this.src.startsWith("pubs/")) return 1; else return this.rshaderId}, set(v){this.rshaderId = v}});
 // Player Chams (WIP)
-O//bject.defineProperty(Object.prototype,"children",{enumerable:!1,get(){return!this._ec&&this?.name?.startsWith("playermap")&&(this._ec=!0)&&(this.visible=!0)&&this.traverse(e=>{e&&"Mesh"===e.type&&(e.material.depthTest=!1,e.material.transparent=!0,e.material.fog=!1,e.material.emissive={r:1})}),this._ec=!1,this._ch},set(e){this._ch=e}});
+//object.defineProperty(Object.prototype,"children",{enumerable:!1,get(){return!this._ec&&this?.name?.startsWith("playermap")&&(this._ec=!0)&&(this.visible=!0)&&this.traverse(e=>{e&&"Mesh"===e.type&&(e.material.depthTest=!1,e.material.transparent=!0,e.material.fog=!1,e.material.emissive={r:1})}),this._ec=!1,this._ch},set(e){this._ch=e}});
 // Unlimited AMMO
-Object.defineProperty(Object.prototype,"unlimitedAmmo",{enumerable: false,get() {return true}});
+//Object.defineProperty(Object.prototype,"unlimitedAmmo",{enumerable: false,get() {return true}});
 
 // ESP Wallhacks (broken)
 )
