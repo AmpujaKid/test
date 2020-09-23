@@ -1,11 +1,6 @@
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
+#remove html file extension https://example.com/page.html
+# to https://example.com/page
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
-RewriteRule . /index.php [L]
-</IfModule>
-# END WordPres
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L] 
