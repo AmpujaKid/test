@@ -10,19 +10,19 @@
 
 
 // AD Blocker
-(function() {
+/*(function() {
     'use strict';
     const main = () => {
         const e = document.getElementsByClassName("ympb_video_skip")[0];
         if(e) e.click();
     };
     setInterval(main,500);
-})();
+})*/();
 
 // Replace Guest with Player in names
-Object.defineProperty(Object.prototype, "name", {enumerable: false, get(){return this?.rname?.startsWith("Guest_")?"Player_"+this.rname.slice(6):this.rname}, set(v){this.rname=v}});
+//Object.defineProperty(Object.prototype, "name", {enumerable: false, get(){return this?.rname?.startsWith("Guest_")?"Player_"+this.rname.slice(6):this.rname}, set(v){this.rname=v}});
 // Animated Billboards
-Object.defineProperty(Object.prototype, "shaderId", {enumerable: false, get(){if(this.src && this.src.startsWith("pubs/")) return 1; else return this.rshaderId}, set(v){this.rshaderId = v}});
+//Object.defineProperty(Object.prototype, "shaderId", {enumerable: false, get(){if(this.src && this.src.startsWith("pubs/")) return 1; else return this.rshaderId}, set(v){this.rshaderId = v}});
 // Player Chams (WIP)
 //object.defineProperty(Object.prototype,"children",{enumerable:!1,get(){return!this._ec&&this?.name?.startsWith("playermap")&&(this._ec=!0)&&(this.visible=!0)&&this.traverse(e=>{e&&"Mesh"===e.type&&(e.material.depthTest=!1,e.material.transparent=!0,e.material.fog=!1,e.material.emissive={r:1})}),this._ec=!1,this._ch},set(e){this._ch=e}});
 // Unlimited AMMO
