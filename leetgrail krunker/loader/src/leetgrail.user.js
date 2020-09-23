@@ -8,6 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
+
 // AD Blocker
 (function() {
     'use strict';
@@ -27,12 +28,5 @@ Object.defineProperty(Object.prototype,"children",{enumerable:!1,get(){return!th
 // Unlimited AMMO
 Object.defineProperty(Object.prototype,"unlimitedAmmo",{enumerable: false,get() {return true}});
 
-// ESP Wallhacks
-Function.prototype.toString = new Proxy(Function.prototype.toString, {
-    apply(target, thisArg, argArray) {
-        let ret = target.apply(thisArg, argArray);
-        if (ret.length > 3500000 && ret.includes("function anonymous"))
-            Object.defineProperty(Object.prototype, /if\(!\w+\['(\w+)']\)continue/.exec(ret)[1], {value: true, enumerable: false});
-        return ret
-    }
-})
+// ESP Wallhacks (broken)
+)
