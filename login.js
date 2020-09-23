@@ -1,7 +1,7 @@
 function pasuser(form) {
 if (form.id.value=="leetgraildev") {
 if (form.pass.value=="krunker") {
-location="Login.html"
+location="Home Page.html"
 } else {
 alert("Invalid Password")
 }
