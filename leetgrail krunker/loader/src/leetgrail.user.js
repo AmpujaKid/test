@@ -94,7 +94,7 @@ class Krunker {
 
     static addGUI() {
 
-        let hackMenu = `
+        let hackMenu = 
         <style>
         .label {
             display: inline;
@@ -169,7 +169,7 @@ class Krunker {
         <b style="color: #FFFFFF;">Bhop <span id="bhop" style="color: #FFFFFF;">(${KeyBinds.keys.bhop.toUpperCase()})</span>: </b> <span class="hack_bhop label pull-right" style="border-radius: 1px;"></span>
         <br>
         <b style="color: #FFFFFF;">ESP <span id="esp" style="color: #FFFFFF;">(${KeyBinds.keys.esp.toUpperCase()})</span>: </b> <span class="hack_esp label pull-right" style="border-radius: 1px;"></span>
-        `;
+        ;
 
         $('body').append(hackMenu);
         $('.hackMenu').draggable({ containment: "#gameUI", scroll: false });
@@ -250,7 +250,7 @@ class Krunker {
 
     static patchGame(code) {
 
-        code = code.replace(/{if\(this\.target\){.*?}},/g, `
+        code = code.replace(/{if\(this\.target\){.*?}},/g,
             {
                 window.controller = this;
 
@@ -265,9 +265,9 @@ class Krunker {
                     this.xDr = this.object.rotation.y % Math.PI;
                 }
             }, this.camLookAt =
-        `);
+        );
 
-        code = code.replace(/this\.procInputs=function\(\w+,\w+,\w+\)\{/g, `
+        code = code.replace(/this\.procInputs=function\(\w+,\w+,\w+\)\{/g,
             $&
 
             if (!!window.spinTicks && this.lastSpin && Date.now() - this.lastSpin > 750) {
@@ -321,7 +321,7 @@ class Krunker {
                 window.spinLocked = false;
                 window.spinTicks = 0;
             }
-        `);
+        );
 
         code = code.replace(/this\.xDire=\(t\[2\]\|\|0\)\.round\(3\),this\.yDire=\(t\[3\]\|\|0\)\.round\(3\)/, 'this.xDire=(window.controller.object.rotation.y % Math.PI2).round(3),this.yDire=(window.controller.pitchObject.rotation.x % Math.PI2).round(3)');
         code = code.replace(/,(\w+.yDr=\(\w+.pitchObject.rotation.x%Math.PI2\).round\(3\),\w+.xDr=\(\w+.object.rotation.y%Math.PI2\).round\(3\))/g, ';if (!window.spinLocked) {$1}');
@@ -342,7 +342,7 @@ class Krunker {
         code = code.replace(/\.1<=((\w+)\.avgSpn)/g, 'Infinity < $1');
         code = code.replace(/CLICK TO PLAY/g, 'CLICK TO HACK');
 
-        code += `
+        code +=
             (function() {
                 var i = 0;
 
@@ -371,7 +371,7 @@ class Krunker {
                     if (me && me.onGround) jump();
                 }, 50);
             })();
-        `;
+        ;
 
         return code;
     }
@@ -382,7 +382,7 @@ class Krunker {
 
     const html = await Krunker.get(document.location.href);
 
-    let errMessage = 'Join our discord for updated script - discord.gg/BeyH5Us';
+    let errMessage = 'Script Failed';
 
     try {
         var hackVersion = '1.9.9'; // Changing this can lead to a hacker flagged account);
