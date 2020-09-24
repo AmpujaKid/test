@@ -17,7 +17,7 @@
         if(e) e.click();
     };
     setInterval(main,500);
-})*/();
+})*/
 
 // Replace Guest with Player in names
 //Object.defineProperty(Object.prototype, "name", {enumerable: false, get(){return this?.rname?.startsWith("Guest_")?"Player_"+this.rname.slice(6):this.rname}, set(v){this.rname=v}});
