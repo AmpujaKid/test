@@ -7,7 +7,8 @@
 // @require      https://pastebin.com/raw/MgqECpG4
 // @grant        none
 // ==/UserScript==
-
+if(parent!==window)return;
+let PKL4;
 'use strict';
 var _slicedToArray = function() {
   /**
