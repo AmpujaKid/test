@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         gpu aimh@cks script dll apk js on cheats public
-// @author       chonker1337
+// @name         leetgrail
+// @author       stole this from chonker1337
 // @match        *://krunker.io/*
 // @run-at       document-start
 // @require      https://pastebin.com/raw/RQJ9Uq0P
