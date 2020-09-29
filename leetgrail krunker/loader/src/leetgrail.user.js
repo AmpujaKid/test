@@ -1,14 +1,13 @@
 // ==UserScript==
 // @name         leetgrail
-// @author       stole this from chonker1337
+// @author       chonker1337
 // @match        *://krunker.io/*
 // @run-at       document-start
 // @require      https://pastebin.com/raw/RQJ9Uq0P
 // @require      https://pastebin.com/raw/MgqECpG4
 // @grant        none
 // ==/UserScript==
-if(parent!==window)return;
-let PKL4;
+
 'use strict';
 var _slicedToArray = function() {
   /**
