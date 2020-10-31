@@ -1,12 +1,12 @@
 function pasuser(form) {
-  if (form.id.value=="leetgrail") {
-      if (form.pass.value=="krunker") {
+  if (form.id.value=="bean") {
+      if (form.pass.value=="leetgrail") {
         location="./tools"
       }
     }
 
-    else if(form.id.value=="leetgraildev") {
-        if(form.pass.value=="krunker") {
+    else if(form.id.value=="ampuja") {
+        if(form.pass.value=="leetgrail") {
           location="./devtools"
         }
         else {
