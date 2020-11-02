@@ -4,12 +4,12 @@
 
 
 
-  
+
   ::selection{
     color: #fff;
     background: #000;
   }
-  
+
 
   *{
     margin: 0;
@@ -24,12 +24,12 @@ html{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-                                  
-                                  
+
+
 }
 
   body {
-    
+
     width: 100%;
     height: 100%;
     background-color: #3a3a3a;
@@ -39,7 +39,7 @@ html{
     z-index: 0;
     position: fixed;
     text-decoration: none;
-    
+
     font-family: 'Josefin Sans';
   }
 
@@ -66,12 +66,12 @@ html{
     border: 1px solid #463f6a;
     background: url(https://i.imgur.com/gHJ5n5t.png);
     background-size: 200%, 200%;
-    
+
     overflow: hidden;
     width: 800px;
     height: 652px;
      opacity: 10;
-    
+
 }
 
 
@@ -145,7 +145,7 @@ ul.tabs{
     text-transform: uppercase;
   }
 
-  
+
   ul.tabs li{
     background: none;
     color: #68648c;
@@ -155,22 +155,22 @@ ul.tabs{
     font-family: 'Josefin Sans';
     font-weight: 500;
   }
-  
-  
 
 
-  
+
+
+
   ul.tabs li.current{
-    
+
     color: rgb(255, 255, 255);
     transition: 200ms;
   }
-  
-  ul.tabs li{   
+
+  ul.tabs li{
     color: #68648c;
     transition: 200ms;
   }
-  
+
   ul.tabs li:hover{
     animation: glitch .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
     color: #fff;
@@ -194,7 +194,7 @@ ul.tabs{
     background: #eb055a;
     transition: .2s;
   }
-  
+
   @keyframes fadeInRight {
     0% {
       opacity: 0;
@@ -205,7 +205,7 @@ ul.tabs{
       left: 0;
     }
   }
-  
+
 
   .control_indicator {
     position: absolute;
@@ -215,12 +215,12 @@ ul.tabs{
     width: 9px;
     background: #19153f;
     border: 1px solid #463f6a;
-   
+
     transition: 200ms;
   }
-  
+
   .control {
-    
+
     display: block;
     position: relative;
     margin-bottom: 7px;
@@ -234,30 +234,30 @@ ul.tabs{
         position: absolute;
         z-index: -1;
         opacity: 0;
-        
+
     }
-  
-  
+
+
   .control:hover input ~ .control_indicator,
   .control input:focus ~ .control_indicator {
     background: #19153f;
   }
-  
+
   .control input:checked ~ .control_indicator {
 
     background: #eb055a;
     border: 1px solid #eb055a;
-   
+
   }
-  
+
   .control input:hover ~ .control_indicator {
     border: 1px solid #eb055a;
-   
+
   }
   .control:hover input:not([disabled]):checked ~ .control_indicator,
   .control input:checked:focus ~ .control_indicator {
     background: #eb055a;
-    
+
   }
   .control input:disabled ~ .control_indicator {
     background: #e6e6e6;
@@ -276,33 +276,33 @@ ul.tabs{
   .control-checkbox input:disabled ~ .control_indicator:after {
     border-color: #7b7b7b;
   }
-  
-  
-  
+
+
+
    fieldset {
     position: relative;
     font-family: 'Josefin Sans';
     font-size: 10px;
     top: 20px;
     width: 150px;
-    height: 150px;
+    height: 215px;
     margin-left: 30px;
     border-style: solid;
     border-width: 1px;
     background: #1f1942;
     border: 1px solid #463f6a;
     margin: 15 15 15 27;
-    
+
     float: left;
   }
-  
+
   legend{
   margin-left: 10px;
   font-family: 'Josefin Sans';
   font-size: 10px;
   }
-  
-  
+
+
   #inside{
     background: #1c1437;
     width: auto;
@@ -311,25 +311,25 @@ ul.tabs{
     height: 540px;
     border: 1px solid #463f6a;
   }
-  
-  
-  
-  
+
+
+
+
   .tab-content{
     display: none;
-  
+
     color: #fff;
     padding: 15px;
     position: relative;
     top: 50px;
   }
-  
+
   .tab-content.current{
     display: inherit;
   }
 
 
- 
+
 
 
 .ui-slider-range {
@@ -350,7 +350,7 @@ ul.tabs{
   transform: translate(-50%, -50%);
 	background: rgba(0,0,0,0.2);
 	outline: none;
-  
+
 }
 
 .range:hover, .range:active {
@@ -362,7 +362,7 @@ ul.tabs{
 	color: #fff;
 	text-align: center;
 	outline: none;
- 
+
   margin-right: 50%;
   float: right;
   font-family: 'Josefin Sans';
